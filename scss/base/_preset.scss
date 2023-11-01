@@ -1,0 +1,21 @@
+body, html{
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: gray;
+}
+
+.inner{
+    width: 1440px;
+    height: 100%;
+    margin: 0px auto;
+    position: relative;
+}
+
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    border: none;
+    z-index: -1;
+}

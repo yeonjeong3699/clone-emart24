@@ -1,0 +1,14 @@
+//base
+@import './base/reset';
+@import './base/var';
+@import './base/preset';
+
+//layout
+@import './layout/header';
+@import './layout/footer';
+
+//page
+@import './page/main';
+
+//media
+@import './layout/media';
