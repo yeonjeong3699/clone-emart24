@@ -43,5 +43,5 @@ function onTitle() {
 
 function outTitle(){
     const sibling = this.previousElementSibling;
-    sibling.style.color = '#333333';
+    sibling.style.color = '';
 }
