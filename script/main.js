@@ -15,11 +15,18 @@ const mainPagination = new Swiper('.slide-container', {
 
 mainSlider.controller.control = mainPagination;
 
+
 const slidePause = document.querySelector('.bx-pause');
 const slidePlay = document.querySelector('.bx-chevron-right');
 
-slidePause.addEventListener('onClick', function () {
+slidePause.addEventListener('click', function () {
     mainSlider.autoplay.stop();
-    // slidePause.style.display = 'none';
-    // slidePlay.style.display = 'block';
+    slidePause.style.display = 'none';
+    slidePlay.style.display = 'block';
+})
+
+slidePlay.addEventListener('click', function () {
+    mainSlider.autoplay.start();
+    slidePlay.style.display = 'none';
+    slidePause.style.display = 'block';
 })

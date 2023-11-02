@@ -1,4 +1,4 @@
-@media screen and (max-width:$pcSmall) {
+@media screen and (max-width:1440px) {
     .header-container{
         .inner{
             .header-top{
@@ -23,9 +23,27 @@
             }
         }
     }//header-container
+
+    .main-container{
+        .visual-wrapper{
+            .inner{
+                width: 1353px;
+                
+                .slide-container{
+                    height: 465px;
+                }
+
+                .slide-nav-wrapper{
+                    left: 200px;
+                }
+            }
+        }//visual-wrapper
+
+
+    }//main-container
 }
 
-@media screen and (max-width:$tab) {
+@media screen and (max-width:744px) {
     .header-container{
         .inner{
             width: 698px;
@@ -53,4 +71,66 @@
             }
         }
     }//header-container
+
+    .main-container{
+        padding-top: 62px;
+
+        .visual-wrapper{
+            .inner{
+                width: 700px;
+
+                .slide-container{
+                    height: 334px;
+                    border-bottom-left-radius: 15px;
+                    border-bottom-right-radius: 15px;
+
+                    .swiper-wrapper{
+                        .swiper-slide{
+                            & > a{
+                                img{
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .slide-nav-wrapper{
+                    width: 95%;
+                    height: 2px;
+                    border: none;
+                    border-radius: 0px;
+                    background-color: transparent;
+                    left: 50%;
+                    bottom: -17px;
+                    transform: translateX(-50%);
+
+                    .slide-btn-box{
+                        display: none;
+                    }
+
+                    .slide-page-box{
+                        width: 100%;
+                        height: 100%;
+                        top: 0px;
+                        right: 0px;
+                        transform: none;
+
+                        .pagination_fraction{
+                            display: none;
+                        }
+
+                        .pagination_progressbar{
+                            width: 100%;
+                            top: 0px;
+                            left: 0px;
+                            transform: none;
+                        }
+                    }
+                }
+            }
+        }//visual-wrapper
+
+
+    }//main-container
 }

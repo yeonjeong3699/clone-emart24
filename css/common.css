@@ -182,7 +182,7 @@ body, html {
 }
 .main-container .visual-wrapper .inner .slide-container {
   width: 100%;
-  height: 496px;
+  height: 495px;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.1);
@@ -201,6 +201,33 @@ body, html {
   bottom: -36px;
   z-index: 1;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
+}
+.main-container .visual-wrapper .inner .slide-nav-wrapper .slide-btn-box {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+.main-container .visual-wrapper .inner .slide-nav-wrapper .slide-btn-box i {
+  color: #333333;
+  cursor: pointer;
+}
+.main-container .visual-wrapper .inner .slide-nav-wrapper .slide-btn-box i:hover {
+  color: #f9bb00;
+}
+.main-container .visual-wrapper .inner .slide-nav-wrapper .slide-btn-box .bx-chevron-right {
+  font-size: 26px;
+  display: none;
+}
+.main-container .visual-wrapper .inner .slide-nav-wrapper .slide-btn-box .bx-pause {
+  font-size: 26px;
+}
+.main-container .visual-wrapper .inner .slide-nav-wrapper .slide-btn-box .bx-left-arrow-alt,
+.main-container .visual-wrapper .inner .slide-nav-wrapper .slide-btn-box .bx-right-arrow-alt {
+  font-size: 22px;
 }
 .main-container .visual-wrapper .inner .slide-nav-wrapper .slide-page-box {
   width: 220px;
@@ -244,33 +271,6 @@ body, html {
 .main-container .visual-wrapper .inner .slide-nav-wrapper .slide-page-box .pagination_progressbar span {
   background-color: #f9bb00;
 }
-.main-container .visual-wrapper .inner .slide-nav-wrapper .slide-btn-box {
-  display: flex;
-  align-items: center;
-  gap: 22px;
-  position: absolute;
-  top: 50%;
-  left: 30px;
-  transform: translateY(-50%);
-}
-.main-container .visual-wrapper .inner .slide-nav-wrapper .slide-btn-box i {
-  color: #333333;
-  cursor: pointer;
-}
-.main-container .visual-wrapper .inner .slide-nav-wrapper .slide-btn-box i:hover {
-  color: #f9bb00;
-}
-.main-container .visual-wrapper .inner .slide-nav-wrapper .slide-btn-box .bx-chevron-right {
-  font-size: 26px;
-  display: none;
-}
-.main-container .visual-wrapper .inner .slide-nav-wrapper .slide-btn-box .bx-pause {
-  font-size: 26px;
-}
-.main-container .visual-wrapper .inner .slide-nav-wrapper .slide-btn-box .bx-left-arrow-alt,
-.main-container .visual-wrapper .inner .slide-nav-wrapper .slide-btn-box .bx-right-arrow-alt {
-  font-size: 22px;
-}
 
 @media screen and (max-width: 1440px) {
   .header-container .inner .header-top {
@@ -285,6 +285,15 @@ body, html {
   .header-container .inner .header-bottom .gnb-wrapper .gnb > li .main-menu {
     font-size: 17px;
     font-weight: 500;
+  }
+  .main-container .visual-wrapper .inner {
+    width: 1353px;
+  }
+  .main-container .visual-wrapper .inner .slide-container {
+    height: 465px;
+  }
+  .main-container .visual-wrapper .inner .slide-nav-wrapper {
+    left: 200px;
   }
 }
 @media screen and (max-width: 744px) {
@@ -308,5 +317,48 @@ body, html {
   }
   .header-container .inner .header-bottom .gnb-btn {
     display: flex;
+  }
+  .main-container {
+    padding-top: 62px;
+  }
+  .main-container .visual-wrapper .inner {
+    width: 700px;
+  }
+  .main-container .visual-wrapper .inner .slide-container {
+    height: 334px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .main-container .visual-wrapper .inner .slide-container .swiper-wrapper .swiper-slide > a img {
+    height: 100%;
+  }
+  .main-container .visual-wrapper .inner .slide-nav-wrapper {
+    width: 95%;
+    height: 2px;
+    border: none;
+    border-radius: 0px;
+    background-color: transparent;
+    left: 50%;
+    bottom: -17px;
+    transform: translateX(-50%);
+  }
+  .main-container .visual-wrapper .inner .slide-nav-wrapper .slide-btn-box {
+    display: none;
+  }
+  .main-container .visual-wrapper .inner .slide-nav-wrapper .slide-page-box {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    transform: none;
+  }
+  .main-container .visual-wrapper .inner .slide-nav-wrapper .slide-page-box .pagination_fraction {
+    display: none;
+  }
+  .main-container .visual-wrapper .inner .slide-nav-wrapper .slide-page-box .pagination_progressbar {
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    transform: none;
   }
 }
