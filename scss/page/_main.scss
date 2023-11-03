@@ -4,7 +4,7 @@
 
     .visual-wrapper{
         .inner{
-            .slide-container{
+            .visual-slide-container{
                 width: 100%;
                 height: 495px;
                 border-bottom-left-radius: 50px;
@@ -118,5 +118,244 @@
         }
     }//visual-wrapper
 
+    .section01-wrapper{
+        margin-top: 130px;
+        display: flex;
+        justify-content: center;
+        gap: 36px;
 
+        .text-wrapper{
+            .title-box{
+                & > h2{
+                    color: $grayDark;
+                    font-size: 45px;
+                    letter-spacing: -1px;
+                }
+
+                & > a{
+                    color: $grayDark;
+                    font-size: 15px;
+                    font-weight: 500;
+                    letter-spacing: -0.5px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin: 25px 0px 40px;
+
+                    & > img{
+                        width: 24px;
+                    }
+                }
+            }
+
+            .category-box{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                & > li{
+                    width: 285px;
+                    height: 52px;
+                    padding: 0px 24px 0px 16px;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    border-bottom-left-radius: 22px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    transition: 0.3s;
+                    cursor: pointer;
+
+                    .category-name{
+                        display: flex;
+                        align-items: center;
+                        gap: 14px;
+
+                        .icon{
+                            width: 18px;
+                            height: 18px;
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            background-size: 90%;   
+                        }
+
+                        .category01{
+                            background-image: url('../../images/section01_onePOne.png');
+                        }
+                        .category02{
+                            background-image: url('../../images/section01_twoPOne.png');
+                        }
+                        .category03{
+                            background-image: url('../../images/section01_new.png');
+                        }
+
+                        .text{
+                            color: $gray;
+                            font-size: 16px;
+                            transition: 0.3s;
+                        }
+                    }
+
+                    & > i{
+                        color: $grayDark;
+                    }
+
+                    &:hover{
+                        background-color: $yellow;
+                        box-shadow: 0px 8px 20px rgba(249, 187, 0, 0.3);
+                    }
+
+                    &:hover .text{
+                        color: white;
+                    }
+                }
+
+                & > li.on{
+                    background-color: $yellow;
+                    box-shadow: 0px 8px 20px rgba(249, 187, 0, 0.3);
+
+                    .category-name{
+                        .category01{
+                            background-image: url('../../images/section01_onePOneActive.png');
+                        }
+                        .category02{
+                            background-image: url('../../images/section01_twoPOneActive.png');
+                        }
+                        .category03{
+                            background-image: url('../../images/section01_newActive.png');
+                        }
+
+                        .text{
+                            color: white;
+                        }
+                    }
+
+                    & > i{
+                        color: white;
+                    }
+
+                    &:hover{
+                        background-color: #fac933;
+                        width: 276px;
+                    }
+                }
+            }
+        }
+
+        .item-wrapper{
+            .sec01-slide-container{
+                width: 960px;
+                height: 100%;
+
+                .swiper-wrapper{
+                    .swiper-slide{
+                        .badge-box{
+                            width: 100%;
+                            position: absolute;
+                            top: 0px;
+
+                            .badge-new{
+                                width: 36px;
+                                height: 22px;
+                                border: solid 1px $gray;
+                                border-radius: 8px;
+                                border-bottom-right-radius: 0px;
+                                color: $gray;
+                                font-size: 12px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                position: absolute;
+                                top: 15px;
+                                left: 15px;
+                                display: none;
+                            }
+
+                            .badge-one{
+                                width: 32px;
+                                height: 24px;
+                                border-radius: 8px;
+                                border-bottom-left-radius: 0px;
+                                background-color: $yellow;
+                                color: white;
+                                font-size: 12px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                position: absolute;
+                                top: 15px;
+                                right: 15px;
+                                display: none;
+                            }
+
+                            .badge-two{
+                                width: 32px;
+                                height: 24px;
+                                border-radius: 8px;
+                                border-bottom-left-radius: 0px;
+                                background-color: $yellow;
+                                color: white;
+                                font-size: 12px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                position: absolute;
+                                top: 15px;
+                                right: 15px;
+                                display: none;
+                            }
+                        }
+
+                        .img-box{
+                            width: 100%;
+                            height: 270px;
+                            padding-top: 40px;
+                            border: solid 1px #e6e6e6;
+                            border-radius: 25px;
+                            box-sizing: border-box;
+                            background-color: white;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            & > img{
+                                width: 80%;
+                                
+                            }
+                        }
+
+                        .text-box{
+                            width: 100%;
+                            height: 62px;
+                            position: relative;
+                            margin-top: 20px;
+                            font-size: 15px;
+                            text-align: center;
+                            letter-spacing: -0.5px;
+                            line-height: 1.3;
+
+                            .item-name{
+                                font-weight: 500;
+                                color: $grayDark;
+
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 2;
+                            }
+
+                            .price{
+                                position: absolute;
+                                bottom: 0px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                color: $red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }//section01-wrapper
 }

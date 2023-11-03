@@ -1,3 +1,5 @@
+const headerTop = document.querySelector('.header-top');
+const headerTopMenu = document.querySelectorAll('.header-top > a');
 const mainMenu = document.querySelectorAll('.main-menu');
 const subMenu = document.querySelectorAll('.sub-menu');
 const background = document.querySelector('.sub-menu-background');
@@ -6,6 +8,23 @@ const hContainer = document.querySelector('.header-container');
 let timer;
 
 
+//scroll
+window.addEventListener('scroll', function () {
+    // console.log(window.scrollY);
+    if (window.scrollY > 0) {
+        headerTop.style.height = '0px';
+        headerTopMenu.forEach((item) => {
+            item.style.transform = 'translateY(-100%)';
+        })
+    } else {
+        headerTop.style.height = '';
+        headerTopMenu.forEach((item) => {
+            item.style.transform = '';
+        })
+    }
+})
+
+//nav
 mainMenu.forEach((item) => {
     item.addEventListener('mouseenter', onMenu)
 })
@@ -41,7 +60,7 @@ function onTitle() {
     sibling.style.color = '#f9bb00';
 }
 
-function outTitle(){
+function outTitle() {
     const sibling = this.previousElementSibling;
     sibling.style.color = '';
 }

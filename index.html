@@ -107,12 +107,12 @@
         <div class="sub-menu-background"></div>
     </header>
     <script src="./script/header.js"></script>
-    <!-- header-container -->
+    <!-- header -->
 
     <main class="main-container">
-        <div class="visual-wrapper">
+        <section class="visual-wrapper">
             <div class="inner">
-                <div class="swiper slide-container">
+                <div class="swiper visual-slide-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="#" title="이벤트 페이지로 이동">
@@ -169,10 +169,78 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section> <!-- visual -->
+
+        <section class="section01-wrapper">
+            <div class="text-wrapper">
+                <div class="title-box">
+                    <h2>11월 행사 상품</h2>
+                    <a href="#" title="이벤트 페이지로 이동">전체보기<img src="./images/section01_more.png"></a>
+                </div>
+
+                <ul class="category-box">
+                    <li class="on">
+                        <div class="category-name">
+                            <div class="icon category01"></div>
+                            <span class="text">1&#43;1</span>
+                        </div>
+
+                        <i class='bx bx-chevron-right'></i>
+                    </li>
+
+                    <li>
+                        <div class="category-name">
+                            <div class="icon category02"></div>
+                            <span class="text">2&#43;1</span>
+                        </div>
+                        
+                        <i class='bx bx-chevron-right'></i>
+                    </li>
+
+                    <li>
+                        <div class="category-name">
+                            <div class="icon category03"></div>
+                            <span class="text">신상품</span>
+                        </div>
+                        
+                        <i class='bx bx-chevron-right'></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="item-wrapper">
+                <div class="swiper sec01-slide-container">
+                    <div class="swiper-wrapper onePOne">
+                        <div class="swiper-slide">
+                            <div class="badge-box">
+                                <div class="badge-new">NEW</div>
+                                <div class="badge-one">1&#43;1</div>
+                                <div class="badge-two">2&#43;1</div>
+                            </div>
+
+                            <div class="img-box"><img src="./images/section01_onePOne_item01.png"></div>
+
+                            <div class="text-box">
+                                <p class="item-name">민생&#41;3겹화장지30&#42;24롤</p>
+                                <p class="price">22&#44;700원</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section> <!-- section01 -->
+
     </main>
     <script src="./script/main.js"></script>
-    <!-- main-container -->
+    <!-- main -->
 </body>
 
 </html>
