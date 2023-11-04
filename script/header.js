@@ -16,11 +16,13 @@ window.addEventListener('scroll', function () {
         headerTopMenu.forEach((item) => {
             item.style.transform = 'translateY(-100%)';
         })
+        background.style.top = '90px';
     } else {
         headerTop.style.height = '';
         headerTopMenu.forEach((item) => {
             item.style.transform = '';
         })
+        background.style.top = '';
     }
 })
 

@@ -29,16 +29,59 @@
             .inner{
                 width: 1353px;
                 
-                .slide-container{
+                .visual-slide-container{
                     height: 465px;
                 }
 
                 .slide-nav-wrapper{
-                    left: 200px;
+                    left: 160px;
                 }
             }
         }//visual-wrapper
 
+        .section01-wrapper{
+            .text-wrapper{
+                .title-box{
+                    & > h2{
+                        font-size: 38px;
+                    }
+                }
+
+                .category-box{
+                    & > li{
+                        width: 249px;
+                    }
+
+                    & > li.on{
+                        &:hover{
+                            width: 240px;
+                        }
+                    }
+                }
+            }
+
+            .item-wrapper{
+                .sec01-item{
+                    .sec01-item-slide{
+                        width: 780px;
+
+                        .swiper-wrapper{
+                            .swiper-slide{
+                                .img-box{
+                                    width: 90%;
+                                    height: 250px;
+
+                                    &:before{
+                                        width: 90%;
+                                        height: 250px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }//section01-wrapper
 
     }//main-container
 }
@@ -79,7 +122,7 @@
             .inner{
                 width: 700px;
 
-                .slide-container{
+                .visual-slide-container{
                     height: 334px;
                     border-bottom-left-radius: 15px;
                     border-bottom-right-radius: 15px;
@@ -130,6 +173,10 @@
                 }
             }
         }//visual-wrapper
+
+        .section01-wrapper{
+            
+        }//section01-wrapper
 
 
     }//main-container
