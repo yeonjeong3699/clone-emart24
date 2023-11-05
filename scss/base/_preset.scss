@@ -1,10 +1,15 @@
+::selection {
+    background: $yellow;
+    color: white;
+ }
+
 body, html{
     font-family: 'Noto Sans KR', sans-serif;
     height: 5000px;
 }
 
 .inner{
-    width: 1440px;
+    width: 1280px;
     height: 100%;
     margin: 0px auto;
     position: relative;

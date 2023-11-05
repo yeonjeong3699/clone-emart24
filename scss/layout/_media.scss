@@ -1,6 +1,6 @@
 @media screen and (max-width:1440px) {
     .header-container{
-        .inner{
+        .header-wrapper{
             .header-top{
                 padding-right: 220px;
             }
@@ -25,8 +25,8 @@
     }//header-container
 
     .main-container{
-        .visual-wrapper{
-            .inner{
+        .visual-container{
+            .visual-wrapper{
                 width: 1353px;
                 
                 .visual-slide-container{
@@ -37,9 +37,9 @@
                     left: 160px;
                 }
             }
-        }//visual-wrapper
+        }//visual-container
 
-        .section01-wrapper{
+        .section01-container{
             .text-wrapper{
                 .title-box{
                     & > h2{
@@ -79,14 +79,50 @@
                     }
                 }
             }
-        }//section01-wrapper
+        }//section01-container
+
+        .section02-container{
+            margin-top: 90px;
+
+            .inner{
+                width: 1040px;
+
+                .title-box{
+                    & > h2{
+                        font-size: 38px;
+                    }
+                }
+
+                & > .item-wrapper{
+                    .sec02-slide-container{
+                        .swiper-wrapper{
+                            .item{
+                                width: 248px;
+                                height: 438px;
+        
+                                .text-box{
+                                    & > .title{
+                                        font-size: 17px;
+                                        font-weight: 400;
+                                        margin: 30px 0px 15px;
+                                    }
+                                    & > .text{
+                                        font-size: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }//section02-container
 
     }//main-container
 }
 
 @media screen and (max-width:744px) {
     .header-container{
-        .inner{
+        .header-wrapper{
             width: 698px;
 
             .header-top{
@@ -116,8 +152,8 @@
     .main-container{
         padding-top: 62px;
 
-        .visual-wrapper{
-            .inner{
+        .visual-container{
+            .visual-wrapper{
                 width: 700px;
 
                 .visual-slide-container{
@@ -170,9 +206,9 @@
                     }
                 }
             }
-        }//visual-wrapper
+        }//visual-container
 
-        .section01-wrapper{
+        .section01-container{
             margin-top: 80px;
             flex-direction: column;
             gap: 14px;
@@ -310,8 +346,66 @@
                     }
                 }
             }
-        }//section01-wrapper
+        }//section01-container
 
+        .section02-container{
+            .inner{
+                width: 662px;
+
+                .title-box{
+                    margin-bottom: 6px;
+
+                    & > h2{
+                        font-size: 18px;
+                    }
+
+                    & > .text{
+                        display: none;
+                    }
+                }
+
+                & > .item-wrapper{
+                    .sec02-slide-container{
+                        padding-top: 10px;
+
+                        .swiper-wrapper{
+                            .item{
+                                height: 480px;
+
+                                &:hover{
+                                    top: -10px;
+                                }
+
+                                &:hover .img-box > img{
+                                    transform: scale(1.1) translateY(-50%);
+                                }
+
+                                .img-box{
+                                    height: 330px;
+
+                                    & > img{
+                                        position: relative;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                    }
+                                }
+
+                                .text-box{
+                                    & > .title{
+                                        font-size: 15px;
+                                        margin: 6px 0px 16px;
+                                    }
+
+                                    & > .text{
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }//section02-container
 
     }//main-container
 }

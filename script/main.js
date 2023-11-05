@@ -35,6 +35,7 @@ slidePlay.addEventListener('click', function () {
 //section01
 const sec01Item01Slider = new Swiper('.sec01-item01', {
     loop: true,
+    loopAdditionalSlides : 1,
     slidesPerView: 4,
     slidesPerGroup: 4,
     spaceBetween: 4,
@@ -49,6 +50,7 @@ const sec01Item01Slider = new Swiper('.sec01-item01', {
 
 const sec01Item02Slider = new Swiper('.sec01-item02', {
     loop: true,
+    loopAdditionalSlides : 1,
     slidesPerView: 4,
     slidesPerGroup: 4,
     spaceBetween: 4,
@@ -63,6 +65,7 @@ const sec01Item02Slider = new Swiper('.sec01-item02', {
 
 const sec01Item03Slider = new Swiper('.sec01-item03', {
     loop: true,
+    loopAdditionalSlides : 1,
     slidesPerView: 4,
     slidesPerGroup: 4,
     spaceBetween: 4,
@@ -74,12 +77,6 @@ const sec01Item03Slider = new Swiper('.sec01-item03', {
         744: { slidesPerView: 3, spaceBetween: 10 }
     }
 })
-
-console.log(window.innerWidth)
-
-if (window.innerWidth == '744px') {
-    sec01Item01Slider.slidesPerView = 3
-}
 
 
 const categoryList = document.querySelectorAll('.category-box > li');
@@ -109,4 +106,19 @@ const categoryActive = () => {
 categoryActive()
 
 
-//
+//section02
+const sec02Slider = new Swiper('.sec02-slide-container', {
+    loop: true,
+    slidesPerView: 4,
+    slidesPerGroup: 4,
+    spaceBetween: 18,
+    speed: 500,
+    centeredSlides: true,
+    breakpoints: {
+        1440: { slidesPerView: 4, spaceBetween: 18 },
+        744: { loop: false, slidesPerView: 1.5, slidesPerGroup: 1, spaceBetween: 18 }
+    }
+})
+
+
+//section03

@@ -5,7 +5,12 @@
     backdrop-filter: blur(7px);
     width: 100%;
 
-    .inner{
+    .header-wrapper{
+        width: 1440px;
+        height: 100%;
+        margin: 0px auto;
+        position: relative;
+
         .header-top{
             width: 100%;
             height: 28px;
