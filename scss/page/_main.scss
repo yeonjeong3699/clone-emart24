@@ -319,10 +319,10 @@
                             }
     
                             .img-box{
-                                width: 94%;
+                                width: 93%;
                                 height: 275px;
                                 padding-top: 40px;
-                                border: solid 1px #e6e6e6;
+                                border: solid 1px $grayLight;
                                 border-radius: 25px;
                                 box-sizing: border-box;
                                 background-color: white;
@@ -341,7 +341,7 @@
                                     display: block;
                                     position: absolute;
                                     top: -4px;
-                                    width: 94%;
+                                    width: 93%;
                                     height: 275px;
                                     border: solid 4px $yellow;
                                     border-radius: 30px;

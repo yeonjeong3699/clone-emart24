@@ -39,8 +39,12 @@ const sec01Item01Slider = new Swiper('.sec01-item01', {
     slidesPerGroup: 4,
     spaceBetween: 4,
     speed: 500,
-    // autoplay: { delay: 2500 },
-    pagination: { el: '.sec01-item01-pagination', clickable: true }
+    autoplay: { delay: 2500 },
+    pagination: { el: '.sec01-item01-pagination', clickable: true },
+    breakpoints: {
+        1440: { slidesPerView: 4, spaceBetween: 2 },
+        744: { slidesPerView: 3, spaceBetween: 10 }
+    }
 })
 
 const sec01Item02Slider = new Swiper('.sec01-item02', {
@@ -49,8 +53,12 @@ const sec01Item02Slider = new Swiper('.sec01-item02', {
     slidesPerGroup: 4,
     spaceBetween: 4,
     speed: 500,
-    // autoplay: { delay: 2500 },
-    pagination: { el: '.sec01-item02-pagination', clickable: true }
+    autoplay: { delay: 2500 },
+    pagination: { el: '.sec01-item02-pagination', clickable: true },
+    breakpoints: {
+        1440: { slidesPerView: 4, spaceBetween: 2 },
+        744: { slidesPerView: 3, spaceBetween: 10 }
+    }
 })
 
 const sec01Item03Slider = new Swiper('.sec01-item03', {
@@ -59,13 +67,17 @@ const sec01Item03Slider = new Swiper('.sec01-item03', {
     slidesPerGroup: 4,
     spaceBetween: 4,
     speed: 500,
-    // autoplay: { delay: 2500 },
-    pagination: { el: '.sec01-item03-pagination', clickable: true }
+    autoplay: { delay: 2500 },
+    pagination: { el: '.sec01-item03-pagination', clickable: true },
+    breakpoints: {
+        1440: { slidesPerView: 4, spaceBetween: 2 },
+        744: { slidesPerView: 3, spaceBetween: 10 }
+    }
 })
 
 console.log(window.innerWidth)
 
-if(window.innerWidth == '744px'){
+if (window.innerWidth == '744px') {
     sec01Item01Slider.slidesPerView = 3
 }
 
@@ -95,3 +107,6 @@ const categoryActive = () => {
 }
 
 categoryActive()
+
+
+//
