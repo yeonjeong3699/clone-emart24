@@ -113,10 +113,9 @@ const sec02Slider = new Swiper('.sec02-slide-container', {
     slidesPerGroup: 4,
     spaceBetween: 18,
     speed: 500,
-    centeredSlides: true,
     breakpoints: {
         1440: { slidesPerView: 4, spaceBetween: 18 },
-        744: { loop: false, slidesPerView: 1.5, slidesPerGroup: 1, spaceBetween: 18 }
+        744: { loop: false, slidesPerView: 1.5, slidesPerGroup: 1, spaceBetween: 18, centeredSlides: true }
     }
 })
 
