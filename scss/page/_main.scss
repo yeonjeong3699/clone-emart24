@@ -669,6 +669,11 @@
                         color: black;
                         font-size: 17px;
                         font-weight: 500;
+                        transition: 0.2s;
+
+                        &:hover{
+                            background-color: $yellow;
+                        }
                     }
                 }
             }
@@ -683,4 +688,109 @@
             }
         }
     }//section04-container
+
+    .section05-container{
+        width: 100%;
+        height: 950px;
+        margin-top: 170px;
+        overflow: hidden;
+
+        .inner{
+            display: flex;
+            align-items: center;
+            gap: 130px;
+
+            .sec05-img-box{
+                width: 625px;
+
+                & > img{
+                    width: 100%;
+                }
+
+                .mobile-img{
+                    display: none;
+                }
+            }
+
+            .sec05-text-wrapper{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 95px;
+                text-align: center;
+
+                .sec05-title-box{
+                    & > p{
+                        color: $yellow;
+                        font-size: 20px;
+                    }
+
+                    & > h2{
+                        margin: 14px 0px 30px 0px;
+                        font-size: 48px;
+                        line-height: 1.5;
+                    }
+
+                    & > a{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 8px;
+                        color: $grayDark;
+                        font-size: 15px;
+                        font-weight: 500;
+
+                        &:hover{
+                            color: $yellow;
+                        }
+
+                        & > img{
+                            width: 24px;
+                        }
+                    }
+                }
+
+                .app-download-btn-box{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 18px;
+
+                    & > a{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 8px;
+                        width: 196px;
+                        height: 58px;
+                        background-color: $yellow;
+                        border-radius: 10px;
+                        color: black;
+                        transition: 0.2s;
+
+                        &:hover{
+                            transform: scale(0.95);
+                        }
+
+                        & > img{
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
+                }
+            }
+
+            .section05-bg{
+                width: 3000px;
+                height: 950px;
+                background: linear-gradient(270deg, #f2f2f2 5.25%, rgba(245, 244, 243, 0.45) 1280px, #fff);
+                position: absolute;
+                top: 0px;
+                right: -6.666vw;
+                z-index: -1;
+                border-top-right-radius: 240px;
+                border-bottom-right-radius: 70px;
+            }
+        }
+    }//section05-container
 }

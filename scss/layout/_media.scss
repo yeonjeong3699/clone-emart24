@@ -185,6 +185,31 @@
             }
         }//section04-container
 
+        .section05-container{
+            height: 830px;
+            margin-top: 125px;
+
+            .inner{
+                width: 1040px;
+
+                .sec05-img-box{
+                    width: 536px;
+                }
+
+                .sec05-text-wrapper{
+                    .sec05-title-box{
+                        & > h2{
+                            font-size: 38px;
+                        }
+                    }
+                }
+
+                .section05-bg{
+                    height: 830px;
+                }
+            }
+        }//section05-container
+
     }//main-container
 }
 
@@ -603,6 +628,69 @@
                 }
             }
         }//section04-container
+
+        .section05-container{
+            height: 158px;
+            margin-top: 110px;
+
+            .inner{
+                width: 662px;
+                padding: 10px;
+                box-sizing: border-box;
+                gap: 2%;
+
+                .sec05-img-box{
+                    width: 20%;
+
+                    & > img{
+                        display: none;
+                    }
+
+                    .mobile-img{
+                        display: block;
+                    }
+                }
+
+                .sec05-text-wrapper{
+                    width: 78%;
+                    gap: 16px;
+
+                    .sec05-title-box{
+                        & > p, & > a{
+                            display: none;
+                        }
+
+                        & > h2{
+                            font-size: 18px;
+                            font-weight: 500;
+                            margin: 0px;
+                        }
+                    }
+
+                    .app-download-btn-box{
+                        width: 100%;
+
+                        & > a{
+                            width: 100%;
+                            height: 48px;
+                        }
+
+                        & > p{
+                            display: none;
+                        }
+                    }
+                }
+
+                .section05-bg{
+                    width: 100%;
+                    height: 100%;
+                    background: #F3F3F3;
+                    right: 0px;
+                    border: solid 1px $grayLight;
+                    border-radius: 15px;
+                }
+            }
+        }//section05-container
 
     }//main-container
 }
