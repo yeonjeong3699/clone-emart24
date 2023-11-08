@@ -793,4 +793,199 @@
             }
         }
     }//section05-container
+
+    .section06-container{
+        margin-top: 164px;
+
+        .inner{
+            display: flex;
+            justify-content: space-between;
+
+            .sec06-title-box{
+                margin-top: 30px;
+
+                .sec06-title{
+                    & > h2{
+                        font-size: 48px;
+                        font-weight: 300;
+                    }
+    
+                    .sec06-title-bold{
+                        font-size: 48px;
+                        font-weight: 700;
+                    }
+                }
+
+                .sec06-text{
+                    color: $yellow;
+                    margin: 20px 0px 30px;
+                }
+
+                .sec06-sns-box{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    & > li{
+                        a{
+                            & > i{
+                                color: $grayLight;
+                                font-size: 26px;
+
+                                &:hover{
+                                    color: $gray;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .sec06-slide-container{
+                width: 930px;
+                margin: 0px;
+
+                .swiper-wrapper{
+                    .sec06-slide-item{
+                        cursor: pointer;
+
+                        &:hover > .img-box{
+                            border-color: $yellow;
+
+                            & > img{
+                                transform: translate(-50%, -50%) scale(1.1);
+                            }
+                        }
+
+                        &:hover > .title-box{
+                            .youtube-logo{
+                                & > i{
+                                    border-color: $yellow;
+                                    background-color: #f9f9f9;
+                                }
+                            }
+
+                            & > .text-box{
+                                .platform, .title{
+                                    color: $yellow;
+                                }
+                            }
+                        }
+
+                        & > .img-box{
+                            height: 388px;
+                            border: solid 4px white;
+                            border-radius: 50px;
+                            overflow: hidden;
+                            transition: 0.3s;
+
+                            & > img{
+                                height: 100%;
+                                position: relative;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                transition: 0.3s;
+                            }
+                        }
+
+                        & > .title-box{
+                            margin-top: 18px;
+                            display: flex;
+                            gap: 12px;
+
+                            .youtube-logo{
+                                & > i{
+                                    color: #ed2123;
+                                    font-size: 30px;
+                                    border: solid 1px $grayLight;
+                                    border-radius: 100%;
+                                    padding: 10px;
+                                    box-sizing: border-box;
+                                    transition: 0.3s;
+                                }
+                            }
+
+                            & > .text-box{
+                                width: 80%;
+
+                                .platform{
+                                    font-size: 24px;
+                                    font-weight: 300;
+                                    margin: 12px 0px 16px;
+                                    transition: 0.3s;
+                                }
+                                .title{
+                                    color: $gray;
+                                    font-size: 15px;
+                                    line-height: 1.4;
+                                    transition: 0.3s;
+                                    letter-spacing: -0.5px;
+
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    display: -webkit-box;
+                                    -webkit-box-orient: vertical;
+                                    -webkit-line-clamp: 2;
+                                }
+
+
+
+                            }
+                        }
+                    }
+
+                    .sec06-slide-item01,
+                    .sec06-slide-item05{
+                        & > .img-box{
+                            border-bottom-left-radius: 0px;
+                        }
+                    }
+
+                    .sec06-slide-item02,
+                    .sec06-slide-item04,
+                    .sec06-slide-item06{
+                        margin-top: 64px;
+                    }
+
+                    .sec06-slide-item03,
+                    .sec06-slide-item06{
+                        & > .img-box{
+                            border-top-right-radius: 0px;
+                        }
+                    }
+                }
+
+                .sec06-slide-handle-left,
+                .sec06-slide-handle-right{
+                    font-size: 35px;
+                    font-weight: 100;
+                    color: $grayDark;
+                    position: absolute;
+                    top: 40%;
+                    z-index: 1;
+                    padding: 8px;
+                    box-sizing: border-box;
+                    border: solid 1px $gray;
+                    border-radius: 100%;
+                    background-color: rgba(255, 255, 255, 0.7);
+                    transition: 0.3s;
+                    cursor: pointer;
+
+                    &:hover{
+                        background-color: white;
+                        transform: scale(0.95);
+                    }
+                }
+
+                .sec06-slide-handle-left{
+                    left: 20px;
+                }
+
+                .sec06-slide-handle-right{
+                    right: 20px;
+                }
+            }
+        }
+    }//section06-container
 }

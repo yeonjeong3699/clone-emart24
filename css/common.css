@@ -76,7 +76,7 @@ a {
 
 body, html {
   font-family: "Noto Sans KR", sans-serif;
-  height: 5000px;
+  height: 8000px;
 }
 
 .inner {
@@ -854,6 +854,150 @@ body, html {
   border-top-right-radius: 240px;
   border-bottom-right-radius: 70px;
 }
+.main-container .section06-container {
+  margin-top: 164px;
+}
+.main-container .section06-container .inner {
+  display: flex;
+  justify-content: space-between;
+}
+.main-container .section06-container .inner .sec06-title-box {
+  margin-top: 30px;
+}
+.main-container .section06-container .inner .sec06-title-box .sec06-title > h2 {
+  font-size: 48px;
+  font-weight: 300;
+}
+.main-container .section06-container .inner .sec06-title-box .sec06-title .sec06-title-bold {
+  font-size: 48px;
+  font-weight: 700;
+}
+.main-container .section06-container .inner .sec06-title-box .sec06-text {
+  color: #f9bb00;
+  margin: 20px 0px 30px;
+}
+.main-container .section06-container .inner .sec06-title-box .sec06-sns-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main-container .section06-container .inner .sec06-title-box .sec06-sns-box > li a > i {
+  color: #ebebeb;
+  font-size: 26px;
+}
+.main-container .section06-container .inner .sec06-title-box .sec06-sns-box > li a > i:hover {
+  color: #999999;
+}
+.main-container .section06-container .inner .sec06-slide-container {
+  width: 930px;
+  margin: 0px;
+}
+.main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item {
+  cursor: pointer;
+}
+.main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item:hover > .img-box {
+  border-color: #f9bb00;
+}
+.main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item:hover > .img-box > img {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item:hover > .title-box .youtube-logo > i {
+  border-color: #f9bb00;
+  background-color: #f9f9f9;
+}
+.main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item:hover > .title-box > .text-box .platform, .main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item:hover > .title-box > .text-box .title {
+  color: #f9bb00;
+}
+.main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item > .img-box {
+  height: 388px;
+  border: solid 4px white;
+  border-radius: 50px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item > .img-box > img {
+  height: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+.main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item > .title-box {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+}
+.main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item > .title-box .youtube-logo > i {
+  color: #ed2123;
+  font-size: 30px;
+  border: solid 1px #ebebeb;
+  border-radius: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+.main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item > .title-box > .text-box {
+  width: 80%;
+}
+.main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item > .title-box > .text-box .platform {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 12px 0px 16px;
+  transition: 0.3s;
+}
+.main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item > .title-box > .text-box .title {
+  color: #999999;
+  font-size: 15px;
+  line-height: 1.4;
+  transition: 0.3s;
+  letter-spacing: -0.5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item01 > .img-box,
+.main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item05 > .img-box {
+  border-bottom-left-radius: 0px;
+}
+.main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item02,
+.main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item04,
+.main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item06 {
+  margin-top: 64px;
+}
+.main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item03 > .img-box,
+.main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item06 > .img-box {
+  border-top-right-radius: 0px;
+}
+.main-container .section06-container .inner .sec06-slide-container .sec06-slide-handle-left,
+.main-container .section06-container .inner .sec06-slide-container .sec06-slide-handle-right {
+  font-size: 35px;
+  font-weight: 100;
+  color: #333333;
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+  padding: 8px;
+  box-sizing: border-box;
+  border: solid 1px #999999;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.main-container .section06-container .inner .sec06-slide-container .sec06-slide-handle-left:hover,
+.main-container .section06-container .inner .sec06-slide-container .sec06-slide-handle-right:hover {
+  background-color: white;
+  transform: scale(0.95);
+}
+.main-container .section06-container .inner .sec06-slide-container .sec06-slide-handle-left {
+  left: 20px;
+}
+.main-container .section06-container .inner .sec06-slide-container .sec06-slide-handle-right {
+  right: 20px;
+}
 
 @media screen and (max-width: 1440px) {
   .header-container .header-wrapper .header-top {
@@ -975,6 +1119,38 @@ body, html {
   }
   .main-container .section05-container .inner .section05-bg {
     height: 830px;
+  }
+  .main-container .section06-container {
+    margin-top: 160px;
+  }
+  .main-container .section06-container .inner {
+    width: 1040px;
+  }
+  .main-container .section06-container .inner .sec06-title-box .sec06-title > h2 {
+    font-size: 38px;
+  }
+  .main-container .section06-container .inner .sec06-title-box .sec06-title .sec06-title-bold {
+    font-size: 38px;
+  }
+  .main-container .section06-container .inner .sec06-slide-container {
+    width: 720px;
+  }
+  .main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item > .img-box {
+    height: 330px;
+    border-radius: 30px;
+  }
+  .main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item01 > .img-box,
+  .main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item05 > .img-box {
+    border-bottom-left-radius: 0px;
+  }
+  .main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item02,
+  .main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item04,
+  .main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item06 {
+    margin-top: 64px;
+  }
+  .main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item03 > .img-box,
+  .main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item06 > .img-box {
+    border-top-right-radius: 0px;
   }
 }
 @media screen and (max-width: 744px) {
@@ -1333,5 +1509,71 @@ body, html {
     right: 0px;
     border: solid 1px #ebebeb;
     border-radius: 15px;
+  }
+  .main-container .section06-container {
+    margin-top: 100px;
+  }
+  .main-container .section06-container .inner {
+    width: 662px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .main-container .section06-container .inner .sec06-title-box {
+    margin-top: 0px;
+  }
+  .main-container .section06-container .inner .sec06-title-box .sec06-title {
+    display: flex;
+    gap: 4px;
+  }
+  .main-container .section06-container .inner .sec06-title-box .sec06-title > h2 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .main-container .section06-container .inner .sec06-title-box .sec06-title .sec06-title-bold {
+    font-size: 18px;
+  }
+  .main-container .section06-container .inner .sec06-title-box .sec06-text {
+    display: none;
+  }
+  .main-container .section06-container .inner .sec06-title-box .sec06-sns-box {
+    display: none;
+  }
+  .main-container .section06-container .inner .sec06-slide-container {
+    width: 100%;
+  }
+  .main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item > .img-box {
+    border-radius: 25px;
+  }
+  .main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item > .title-box {
+    margin-top: 10px;
+    gap: 5px;
+  }
+  .main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item > .title-box .youtube-logo > i {
+    font-size: 16px;
+    border: none;
+    padding: 5px;
+  }
+  .main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item > .title-box > .text-box {
+    width: 100%;
+  }
+  .main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item > .title-box > .text-box .platform {
+    font-size: 18px;
+    color: #333333;
+    margin: 2px 0px 8px;
+  }
+  .main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item > .title-box > .text-box .title {
+    font-size: 13px;
+    position: relative;
+    left: -26px;
+    width: 110%;
+  }
+  .main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item02,
+  .main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item04,
+  .main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item06 {
+    margin-top: 0px;
+  }
+  .main-container .section06-container .inner .sec06-slide-container .sec06-slide-handle-left,
+  .main-container .section06-container .inner .sec06-slide-container .sec06-slide-handle-right {
+    display: none;
   }
 }

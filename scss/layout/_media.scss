@@ -210,6 +210,59 @@
             }
         }//section05-container
 
+        .section06-container{
+            margin-top: 160px;
+
+            .inner{
+                width: 1040px;
+
+                .sec06-title-box{
+                    .sec06-title{
+                        & > h2{
+                            font-size: 38px;
+                        }
+
+                        .sec06-title-bold{
+                            font-size: 38px;
+                        }
+                    }
+                }
+
+                .sec06-slide-container{
+                    width: 720px;
+
+                    .swiper-wrapper{
+                        .sec06-slide-item{
+                            & > .img-box{
+                                height: 330px;
+                                border-radius: 30px;
+                            }
+                        }
+
+                        .sec06-slide-item01,
+                        .sec06-slide-item05{
+                            & > .img-box{
+                                border-bottom-left-radius: 0px;
+                            }
+                        }
+    
+                        .sec06-slide-item02,
+                        .sec06-slide-item04,
+                        .sec06-slide-item06{
+                            margin-top: 64px;
+                        }
+    
+                        .sec06-slide-item03,
+                        .sec06-slide-item06{
+                            & > .img-box{
+                                border-top-right-radius: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }//section06-container
+
     }//main-container
 }
 
@@ -691,6 +744,96 @@
                 }
             }
         }//section05-container
+
+        .section06-container{
+            margin-top: 100px;
+
+            .inner{
+                width: 662px;
+                flex-direction: column;
+                // justify-content: flex-start;
+                gap: 20px;
+
+                .sec06-title-box{
+                    margin-top: 0px;
+
+                    .sec06-title{
+                        display: flex;
+                        gap: 4px;
+
+                        & > h2{
+                            font-size: 18px;
+                            font-weight: 700;
+                        }
+
+                        .sec06-title-bold{
+                            font-size: 18px;
+                        }
+                    }
+
+                    .sec06-text{
+                        display: none;
+                    }
+
+                    .sec06-sns-box{
+                        display: none;
+                    }
+
+                }
+
+                .sec06-slide-container{
+                    width: 100%;
+
+                    .swiper-wrapper{
+                        .sec06-slide-item{
+                            & > .img-box{
+                                border-radius: 25px;
+                            }
+
+                            & > .title-box{
+                                margin-top: 10px;
+                                gap: 5px;
+
+                                .youtube-logo{
+                                    & > i{
+                                        font-size: 16px;
+                                        border: none;
+                                        padding: 5px;
+                                    }
+                                }
+
+                                & > .text-box{
+                                    width: 100%;
+
+                                    .platform{
+                                        font-size: 18px;
+                                        color: $grayDark;
+                                        margin: 2px 0px 8px;
+                                    }
+                                    .title{
+                                        font-size: 13px;
+                                        position: relative;
+                                        left: -26px;
+                                        width: 110%;
+                                    }
+                                }
+                            }
+                        }
+
+                        .sec06-slide-item02,
+                        .sec06-slide-item04,
+                        .sec06-slide-item06{
+                            margin-top: 0px;
+                        }
+                    }
+
+                    .sec06-slide-handle-left,
+                    .sec06-slide-handle-right{
+                        display: none;
+                    }
+                }
+            }
+        }//section06-container
 
     }//main-container
 }

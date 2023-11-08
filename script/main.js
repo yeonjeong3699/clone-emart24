@@ -35,7 +35,7 @@ slidePlay.addEventListener('click', function () {
 //section01
 const sec01Item01Slider = new Swiper('.sec01-item01', {
     loop: true,
-    loopAdditionalSlides : 1,
+    loopAdditionalSlides: 1,
     slidesPerView: 4,
     slidesPerGroup: 4,
     spaceBetween: 4,
@@ -50,7 +50,7 @@ const sec01Item01Slider = new Swiper('.sec01-item01', {
 
 const sec01Item02Slider = new Swiper('.sec01-item02', {
     loop: true,
-    loopAdditionalSlides : 1,
+    loopAdditionalSlides: 1,
     slidesPerView: 4,
     slidesPerGroup: 4,
     spaceBetween: 4,
@@ -65,7 +65,7 @@ const sec01Item02Slider = new Swiper('.sec01-item02', {
 
 const sec01Item03Slider = new Swiper('.sec01-item03', {
     loop: true,
-    loopAdditionalSlides : 1,
+    loopAdditionalSlides: 1,
     slidesPerView: 4,
     slidesPerGroup: 4,
     spaceBetween: 4,
@@ -120,4 +120,34 @@ const sec02Slider = new Swiper('.sec02-slide-container', {
 })
 
 
-//section03
+//section06
+const sec06Slider = new Swiper('.sec06-slide-container', {
+    slidesPerView: 3,
+    slidesPerGroup: 1,
+    spaceBetween: 16,
+    speed: 500,
+    navigation: { prevEl: '.sec06-slide-handle-left', nextEl: '.sec06-slide-handle-right' },
+    breakpoints: {
+        1440: { spaceBetween: 10 },
+        744: { slidesPerView: 2, spaceBetween: 10, centeredSlides: true, initialSlide: 1 }
+    }
+})
+
+const sec06SlideHandleLeft = document.querySelector('.sec06-slide-handle-left');
+const sec06SlideHandleRight = document.querySelector('.sec06-slide-handle-right');
+
+sec06SlideHandleLeft.addEventListener('mousedown', function () {
+    sec06SlideHandleLeft.style.transform = 'scale(0.9)'
+})
+
+sec06SlideHandleLeft.addEventListener('mouseup', function () {
+    sec06SlideHandleLeft.style.transform = 'scale(0.95)'
+})
+
+sec06SlideHandleRight.addEventListener('mousedown', function () {
+    sec06SlideHandleRight.style.transform = 'scale(0.9)'
+})
+
+sec06SlideHandleRight.addEventListener('mouseup', function () {
+    sec06SlideHandleRight.style.transform = 'scale(0.95)'
+})
