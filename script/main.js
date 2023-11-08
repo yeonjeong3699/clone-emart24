@@ -141,7 +141,7 @@ sec06SlideHandleLeft.addEventListener('mousedown', function () {
 })
 
 sec06SlideHandleLeft.addEventListener('mouseup', function () {
-    sec06SlideHandleLeft.style.transform = 'scale(0.95)'
+    sec06SlideHandleLeft.style.transform = ''
 })
 
 sec06SlideHandleRight.addEventListener('mousedown', function () {
@@ -149,5 +149,5 @@ sec06SlideHandleRight.addEventListener('mousedown', function () {
 })
 
 sec06SlideHandleRight.addEventListener('mouseup', function () {
-    sec06SlideHandleRight.style.transform = 'scale(0.95)'
+    sec06SlideHandleRight.style.transform = ''
 })
