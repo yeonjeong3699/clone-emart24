@@ -604,4 +604,83 @@
             }
         }
     }//section03-container
+
+    .section04-container{
+        margin-top: 135px;
+
+        .inner{
+            .section04-title{
+                font-size: 48px;
+                margin-bottom: 60px;
+            }
+
+            .section04-search-bar{
+                width: 732px;
+                position: relative;
+
+                & > input{
+                    width: 100%;
+                    height: 68px;
+                    border: solid 2px $yellow;
+                    border-radius: 10px;
+                    border-bottom-left-radius: 30px;
+                    font-family: 'Noto Sans KR';
+                    font-size: 24px;
+                    color: $grayDark;
+                    text-indent: 20px;
+                }
+
+                & > button{
+                    width: 30px;
+                    height: 31px;
+                    border: none;
+                    background: none;
+                    position: absolute;
+                    top: 50%;
+                    right: 35px;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+
+                    & > img{
+                        width: 300%;
+                        position: relative;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+
+            .map-btn-wrapper{
+                display: flex;
+                gap: 16px;
+                margin-top: 20px;
+
+                & > li{
+                    a{
+                        width: 134px;
+                        height: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 15px;
+                        border-top-right-radius: 0px;
+                        background-color: $grayLight;
+                        color: black;
+                        font-size: 17px;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .section04-img-box{
+                & > img{
+                    width: 420px;
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                }
+            }
+        }
+    }//section04-container
 }

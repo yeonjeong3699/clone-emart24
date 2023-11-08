@@ -1,7 +1,11 @@
-::selection {
+::selection{
     background: $yellow;
     color: white;
- }
+}
+
+::placeholder{
+    color: #d1d1d1;
+}
 
 body, html{
     font-family: 'Noto Sans KR', sans-serif;
