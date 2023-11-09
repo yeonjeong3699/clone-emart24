@@ -76,7 +76,6 @@ a {
 
 body, html {
   font-family: "Noto Sans KR", sans-serif;
-  height: 8000px;
 }
 
 .inner {
@@ -998,6 +997,71 @@ body, html {
 .main-container .section06-container .inner .sec06-slide-container .sec06-slide-handle-right {
   right: 20px;
 }
+.main-container .section07-container {
+  margin: 170px 0px;
+}
+.main-container .section07-container .inner {
+  display: flex;
+  justify-content: space-between;
+}
+.main-container .section07-container .inner .section07-wrapper {
+  width: 49.5%;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.06);
+}
+.main-container .section07-container .inner .section07-wrapper > .title-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.main-container .section07-container .inner .section07-wrapper > .title-box .section07-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+.main-container .section07-container .inner .section07-wrapper > .title-box > a {
+  color: #333333;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+}
+.main-container .section07-container .inner .section07-wrapper > .title-box > a:hover {
+  color: #f9bb00;
+}
+.main-container .section07-container .inner .section07-wrapper > .title-box > a > img {
+  width: 24px;
+  margin-left: 6px;
+}
+.main-container .section07-container .inner .section07-wrapper > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-container .section07-container .inner .section07-wrapper > ul .section07-item > a {
+  display: flex;
+  justify-content: space-between;
+}
+.main-container .section07-container .inner .section07-wrapper > ul .section07-item > a:hover > p {
+  color: #f9bb00;
+}
+.main-container .section07-container .inner .section07-wrapper > ul .section07-item > a > p {
+  color: #999999;
+  font-size: 15px;
+  letter-spacing: -0.5px;
+  transition: 0.2s;
+}
+.main-container .section07-container .inner .section07-wrapper > ul .section07-item > a > p:first-of-type {
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
 
 @media screen and (max-width: 1440px) {
   .header-container .header-wrapper .header-top {
@@ -1151,6 +1215,12 @@ body, html {
   .main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item03 > .img-box,
   .main-container .section06-container .inner .sec06-slide-container .swiper-wrapper .sec06-slide-item06 > .img-box {
     border-top-right-radius: 0px;
+  }
+  .main-container .section07-container {
+    margin: 150px 0px;
+  }
+  .main-container .section07-container .inner {
+    width: 1040px;
   }
 }
 @media screen and (max-width: 744px) {
@@ -1575,5 +1645,36 @@ body, html {
   .main-container .section06-container .inner .sec06-slide-container .sec06-slide-handle-left,
   .main-container .section06-container .inner .sec06-slide-container .sec06-slide-handle-right {
     display: none;
+  }
+  .main-container .section07-container {
+    margin: 100px 0px;
+  }
+  .main-container .section07-container .inner {
+    width: 662px;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .main-container .section07-container .inner .section07-wrapper {
+    width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+  }
+  .main-container .section07-container .inner .section07-wrapper > .title-box {
+    margin-bottom: 22px;
+  }
+  .main-container .section07-container .inner .section07-wrapper > .title-box .section07-title {
+    font-size: 16px;
+  }
+  .main-container .section07-container .inner .section07-wrapper > .title-box > a {
+    font-size: 12px;
+  }
+  .main-container .section07-container .inner .section07-wrapper > .title-box > a > img {
+    width: 14px;
+  }
+  .main-container .section07-container .inner .section07-wrapper > ul {
+    gap: 16px;
+  }
+  .main-container .section07-container .inner .section07-wrapper > ul .section07-item > a > p {
+    font-size: 14px;
   }
 }
