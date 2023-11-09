@@ -1,0 +1,115 @@
+.footer-container{
+    padding: 90px 0px 75px;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+
+    .inner{
+        .footer-top-wrapper{
+            display: flex;
+            justify-content: space-between;
+
+            & > ul{
+                display: flex;
+                gap: 30px;
+
+                & > li{
+                    position: relative;
+
+                    & > a{
+                        color: $grayDark;
+                        font-size: 12px;
+                        transition: 0.1s;
+
+                        &:after{
+                            content: "";
+                            display: block;
+                            width: 1px;
+                            height: 12px;
+                            background-color: $gray;
+                            position: absolute;
+                            top: 5px;
+                            right: -15px;
+                        }
+
+                        &:hover{
+                            color: $yellow;
+                        }
+                    }
+
+                    &:first-of-type > a{
+                        font-weight: 700;
+                    }
+
+                    &:last-of-type > a:after{
+                        display: none;
+                    }
+
+
+                }
+            }
+
+            & > p{
+                color: $grayDark;
+                font-size: 12px;
+                cursor: pointer;
+
+                &:hover > span{
+                    color: $yellow;
+                }
+
+                & > span{
+                    margin-left: 6px;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .footer-sns-wrapper{
+            margin: 40px 0px 24px;
+            display: flex;
+            justify-content: space-between;
+
+            & > p{
+                color: $grayDark;
+                font-size: 12px;
+                font-weight: 300;
+            }
+
+            & > ul{
+                display: flex;
+                gap: 8px;
+
+                & > li{
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 100%;
+                    background-color: white;
+
+                    &:hover{
+                        border: solid 1px $yellow;
+                        box-sizing: border-box;
+                    }
+
+                    & > a{
+                        & > img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .company-wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            & > p{
+                color: $gray;
+                font-size: 12px;
+                font-weight: 300;
+                letter-spacing: -0.5px;
+            }
+        }
+    }
+}

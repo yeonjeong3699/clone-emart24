@@ -272,6 +272,12 @@
         }//section07-container
 
     }//main-container
+
+    .footer-container{
+        .inner{
+            width: 1040px;
+        }
+    }//footer-container
 }
 
 @media screen and (max-width:744px) {
@@ -888,4 +894,32 @@
         }//section07-container
 
     }//main-container
+
+    .footer-container{
+        padding: 80px 0px 90px;
+
+        .inner{
+            width: 662px;
+
+            .footer-top-wrapper{
+                flex-direction: column;
+                gap: 16px;
+
+                & > ul{
+                    flex-direction: column;
+                    gap: 10px;
+
+                    & > li{
+                        & > a:after{
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .footer-sns-wrapper{
+                align-items: center;
+            }
+        }
+    }//footer-container
 }
