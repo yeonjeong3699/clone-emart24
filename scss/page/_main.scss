@@ -544,6 +544,10 @@
                         top: 0px;
                     }
 
+                    &:hover .sec03-img-calender{
+                        padding-bottom: 14px;
+                    }
+
                     .description{
                         .item-title-box{
                             display: flex;
@@ -574,6 +578,49 @@
 
                         & > img{
                             width: 100%;
+                            transition: 0.5s;
+                        }
+
+                        .sec03-img-idea{
+                            animation-duration: 1000ms;
+                            animation-iteration-count: infinite;
+                            animation-direction: alternate;
+
+                            &.on{
+                                animation-name: sec03AniIdea;
+                            }
+                        }
+
+                        .sec03-img-coins{
+                            z-index: 1;
+                            animation-duration: 2000ms;
+                            animation-iteration-count: infinite;
+                            animation-timing-function: ease-out;
+
+                            &.on{
+                                animation-name: sec03AniCoins;
+                            }
+                        }
+
+                        .sec03-img-coin{
+                            z-index: 1;
+                            animation-duration: 2000ms;
+                            animation-iteration-count: infinite;
+                            animation-timing-function: ease-in-out;
+
+                            &.on{
+                                animation-name: sec03AniCoin;
+                            }
+                        }
+
+                        .sec03-img-chat{
+                            animation-duration: 1000ms;
+                            animation-iteration-count: infinite;
+                            animation-direction: alternate-reverse;
+
+                            &.on{
+                                animation-name: sec03AniChat;
+                            }
                         }
                     }
 
@@ -684,6 +731,13 @@
                     position: absolute;
                     top: 0px;
                     right: 0px;
+                }
+                
+                .sec04-img-pin{
+                    animation-name: sec04AniPin;
+                    animation-duration: 800ms;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
                 }
             }
         }
@@ -1068,4 +1122,102 @@
             }
         }
     }//.section07-container
+}
+
+
+//section03 animation
+@keyframes sec03AniIdea{
+    0%{
+        padding-bottom: 0px;
+        filter: grayscale(0%);
+    }
+    25%{
+        filter: grayscale(50%);
+    }
+    50%{
+        filter: grayscale(80%);
+    }
+    60%{
+        filter: grayscale(50%);
+    }
+    75%{
+        filter: grayscale(20%);
+    }
+    77%{
+        filter: grayscale(50%);
+    }
+    100%{
+        padding-bottom: 14px;
+        filter: grayscale(80%);
+    }
+}
+
+@keyframes sec03AniCoins{
+    0%{
+        bottom: 140px;
+        opacity: 0;
+    }
+
+    30%{
+        bottom: 0px;
+        opacity: 1;
+    }
+
+    60%{
+        opacity: 0;
+    }
+
+    70%{
+        bottom: -80px;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes sec03AniCoin{
+    0%{
+        bottom: 140px;
+        opacity: 0;
+    }
+
+    50%{
+        bottom: 0px;
+        opacity: 1;
+    }
+
+    80%{
+        opacity: 0;
+    }
+
+    90%{
+        bottom: -80px;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes sec03AniChat{
+    0%{
+        padding-bottom: 0px;
+    }
+
+    100%{
+        padding-bottom: 20px;
+        filter: brightness(103%);
+    }
+}
+
+//section04 animation
+@keyframes sec04AniPin{
+    0%{
+        top: 0px;
+    }
+
+    100%{
+        top: -30px;
+    }
 }

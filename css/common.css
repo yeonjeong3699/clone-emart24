@@ -743,6 +743,9 @@ body, html {
   background-color: #f9f9f9;
   top: 0px;
 }
+.main-container .section03-container .inner .sec03-item-wrapper > .item:hover .sec03-img-calender {
+  padding-bottom: 14px;
+}
 .main-container .section03-container .inner .sec03-item-wrapper > .item .description .item-title-box {
   display: flex;
   justify-content: space-between;
@@ -767,6 +770,41 @@ body, html {
 }
 .main-container .section03-container .inner .sec03-item-wrapper > .item > .img-box > img {
   width: 100%;
+  transition: 0.5s;
+}
+.main-container .section03-container .inner .sec03-item-wrapper > .item > .img-box .sec03-img-idea {
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.main-container .section03-container .inner .sec03-item-wrapper > .item > .img-box .sec03-img-idea.on {
+  animation-name: sec03AniIdea;
+}
+.main-container .section03-container .inner .sec03-item-wrapper > .item > .img-box .sec03-img-coins {
+  z-index: 1;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+.main-container .section03-container .inner .sec03-item-wrapper > .item > .img-box .sec03-img-coins.on {
+  animation-name: sec03AniCoins;
+}
+.main-container .section03-container .inner .sec03-item-wrapper > .item > .img-box .sec03-img-coin {
+  z-index: 1;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.main-container .section03-container .inner .sec03-item-wrapper > .item > .img-box .sec03-img-coin.on {
+  animation-name: sec03AniCoin;
+}
+.main-container .section03-container .inner .sec03-item-wrapper > .item > .img-box .sec03-img-chat {
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.main-container .section03-container .inner .sec03-item-wrapper > .item > .img-box .sec03-img-chat.on {
+  animation-name: sec03AniChat;
 }
 .main-container .section03-container .inner .sec03-item-wrapper > .item .calender-img-box {
   width: 100%;
@@ -856,6 +894,12 @@ body, html {
   position: absolute;
   top: 0px;
   right: 0px;
+}
+.main-container .section04-container .inner .section04-img-box .sec04-img-pin {
+  animation-name: sec04AniPin;
+  animation-duration: 800ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 .main-container .section05-container {
   width: 100%;
@@ -1154,6 +1198,86 @@ body, html {
   -webkit-line-clamp: 1;
 }
 
+@keyframes sec03AniIdea {
+  0% {
+    padding-bottom: 0px;
+    filter: grayscale(0%);
+  }
+  25% {
+    filter: grayscale(50%);
+  }
+  50% {
+    filter: grayscale(80%);
+  }
+  60% {
+    filter: grayscale(50%);
+  }
+  75% {
+    filter: grayscale(20%);
+  }
+  77% {
+    filter: grayscale(50%);
+  }
+  100% {
+    padding-bottom: 14px;
+    filter: grayscale(80%);
+  }
+}
+@keyframes sec03AniCoins {
+  0% {
+    bottom: 140px;
+    opacity: 0;
+  }
+  30% {
+    bottom: 0px;
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    bottom: -80px;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sec03AniCoin {
+  0% {
+    bottom: 140px;
+    opacity: 0;
+  }
+  50% {
+    bottom: 0px;
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    bottom: -80px;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sec03AniChat {
+  0% {
+    padding-bottom: 0px;
+  }
+  100% {
+    padding-bottom: 20px;
+    filter: brightness(103%);
+  }
+}
+@keyframes sec04AniPin {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -30px;
+  }
+}
 @media screen and (max-width: 1440px) {
   .header-container .header-wrapper .header-top {
     padding-right: 220px;

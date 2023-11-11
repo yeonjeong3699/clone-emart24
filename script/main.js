@@ -120,6 +120,25 @@ const sec02Slider = new Swiper('.sec02-slide-container', {
 })
 
 
+//section03
+const sec03Item = document.querySelectorAll('.sec03-item-wrapper > .item');
+
+sec03Item.forEach((item) => {
+    const sec03Img01 = item.lastElementChild.firstElementChild
+    const sec03Img02 = item.lastElementChild.lastElementChild
+
+    item.addEventListener('mouseenter', function () {
+        sec03Img01.classList.add('on');
+        sec03Img02.classList.add('on');
+    })
+
+    item.addEventListener('mouseleave', function () {
+        sec03Img01.classList.remove('on');
+        sec03Img02.classList.remove('on');
+    })
+})
+
+
 //section06
 const sec06Slider = new Swiper('.sec06-slide-container', {
     slidesPerView: 3,
