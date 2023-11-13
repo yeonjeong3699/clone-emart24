@@ -491,13 +491,13 @@ body, html {
   box-shadow: 0px 8px 20px rgba(249, 187, 0, 0.3);
 }
 .main-container .section01-container .text-wrapper .category-box > li.on .category-name .category01 {
-  background-image: url("../../images/section01_onePOneActive.png");
+  background-image: url("../images/section01_onePOneActive.png");
 }
 .main-container .section01-container .text-wrapper .category-box > li.on .category-name .category02 {
-  background-image: url("../../images/section01_twoPOneActive.png");
+  background-image: url("../images/section01_twoPOneActive.png");
 }
 .main-container .section01-container .text-wrapper .category-box > li.on .category-name .category03 {
-  background-image: url("../../images/section01_newActive.png");
+  background-image: url("../images/section01_newActive.png");
 }
 .main-container .section01-container .text-wrapper .category-box > li.on .category-name .text {
   color: white;
